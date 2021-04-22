@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadgen Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="customizer">
+            <h1 class="custom">Customizer</h1>
+            <div class="colors">
+                <div class="color">
+                    <h2 class="active">
+                        Active Color
+                    </h2>
+                    <div class="colorEditor">
+                        <input type="color" name="" id="color" class='colorPicker'>
+                        <div class="hexColor">
+                            <input type="text" name="" id="hexColor" value="" class='hexColors' maxlength='7'>
+                        </div>
+                    </div>
+                </div>
+                &nbsp;&nbsp;
+                <div class="color">
+                    <h2 class="active">
+                        Text Color
+                    </h2>
+                    <div class="colorEditor">
+                        <input type="color" name="" id="color1" class='colorPicker'>
+                        <div class="hexColor">
+                            <input type="text" name="" id="hexColor1" value="" class='hexColors' maxlength='7'>
+                        </div>
+                    </div>
+                </div>
+                &nbsp;&nbsp;
+                <div class="color">
+                    <h2 class="active">
+                        Warning Color
+                    </h2>
+                    <div class="colorEditor">
+                        <input type="color" name="" id="color2" class='colorPicker'>
+                        <div class="hexColor">
+                            <input type="text" name="" id="hexColor2" value="" class='hexColors' maxlength='7'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fonts">
+                <h1>Fonts</h1>
+                <h2>Primary Font Family</h2>
+                <select name="" id="fonts" onclick="">
+                    <option value="" class='option'>sans-serif</option>
+                    <option value="" class='option'>monospace</option>
+                    <option value="" class='option'>consolas</option>
+                    <option value="" class='option'>sketsa ramadhan</option>
+                    <option value="" class='option'>Fantasy</option>
+                    <option value="" class='option'>great vibes</option>
+                    <option value="" class='option'>Digital-7</option>
+                </select>
+            </div>
+            <div class="fonts-secondary">
+                <h1>Fonts</h1>
+                <h2>Secondary Font Family</h2>
+                <select name="" id="font-secondary" onclick="">
+                    <option value="" class='option-secondary'>sans-serif</option>
+                    <option value="" class='option-secondary'>monospace</option>
+                    <option value="" class='option-secondary'>consolas</option>
+                    <option value="" class='option-secondary'>sketsa ramadhan</option>
+                    <option value="" class='option-secondary'>Fantasy</option>
+                    <option value="" class='option-secondary'>great vibes</option>
+                    <option value="" class='option-secondary'>Digital-7</option>
+                </select>
+            </div>
+            <div class="backgroundColor">
+                <div class="background-color">
+                    <label for="bgColorPicker">Background Color : </label>
+                    <input type="color" name="colorPicker" id="bgColorPicker" class="backgroundColorPicker">
+                </div>
+                <div class="secondaryColor">
+                    <label for="secondaryColor">Secondary Color : </label>
+                    <input type="color" name="" id="secondayColor" class="secondary-color">
+                </div>
+            </div>
+            <h1 class="themesHeading">Themes</h1>
+            <div class="themes">
+                <div class="t1" id="theme1">
+                    #ff0094
+                    <div class="themeColor"></div>
+                </div>
+                <div class="t2" id="theme2">
+                    #123456
+                    <div class="themeColor2"></div>
+                </div>
+                <div class="t3" id="theme3">
+                    #3fc1c9
+                    <div class="themeColor3"></div>
+                </div>
+                
+            </div>
+            <div class="reset">
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="form" id='form'>
+            <form action="">
+                <div class="questionMain">
+                    <h1 class='questionText'>question</h1>
+                    <div class="questionDesc">Description about question
+                        <input value="Question..." class='questionActive'>
+                    <div class="errorMsg">This Field is required</div>
+                </div>
+                <div class="platform">
+                    <h1 class="platformTxt">which platform(s) will the app will be build on ? *</h1>
+                    <div class="android pltfrm">Android</div>
+                    <div class="windows pltfrm">Windows</div>
+                </div>
+                <div class="gdpr">
+                    <h1>GDPR Marketing Permissions</h1>
+                    <div class="gdprDesc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa molestias mollitia delectus doloremque, consequuntur blanditiis quidem nulla molestiae fugiat explicabo veniam nisi a saepe, dolorem, maxime in corrupti. Saepe, repudiandae?</div>
+                </div>
+                <div class="checkboxes">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="chkbx1">
+                        <label for="chkbx1">Email</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="chkbx2">
+                        <label for="chkbx1">Direct Post</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="chkbx3">
+                        <label for="chkbx1">Customised Online Advertising</label>
+                    </div>
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas optio tenetur doloremque voluptatibus impedit, dicta accusamus sapiente! Eum eveniet quidem tempore nam perspiciatis explicabo aliquid! Nisi quam corrupti repellat aliquid excepturi corporis, laudantium reiciendis deserunt vero autem, recusandae velit a?
+                </div>
+                <div class="btns">
+                    <div class="btn goBack ">Go Back</div>
+                    <div class="btn continue">Continue</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

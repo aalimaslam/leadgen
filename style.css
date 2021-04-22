@@ -1,0 +1,279 @@
+*{
+    margin:0;
+padding:0;
+box-sizing: border-box;
+}
+*{
+    transition: all .3s;
+}
+body{
+    background:#eee;
+    min-height:100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100vh;
+}
+.hash{
+    width: 30px;
+    text-align:center;
+    background:#fff;
+    color:black;
+    outline: none;
+    border:none;
+    user-select: none;
+    /* padding:10px 15px */
+    padding:10px;
+}
+.colorPicker{
+    height:50px;
+    width:50px;
+}
+.colorEditor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:transparent;
+}
+input{
+    outline:none;
+    border:none;
+}
+.hexColors{
+    padding:10px 20px;
+}
+.colors{
+    display: flex;
+    font-family: sans-serif;
+    background:rgba(0, 128, 128,0.3);
+    padding:20px;
+    color:black;
+}
+.fonts{
+    padding:20px;
+    background:rgba(30, 144, 255,0.3);
+    font-family:sans-serif;
+}
+select{
+    outline:none;
+    border:none;
+    padding:10px;
+    width:100%;
+}
+.fonts h1,.fonts h2{
+    padding:5px;
+}
+.questionMain h1{
+    text-transform: uppercase;
+}
+.form{
+    width:48%;
+    background:#ddd;
+    padding:20px;
+    font-family: var(--font);
+    color:var(--textColor);
+}
+.questionMain h1{
+    padding:5px;
+}
+.questionDesc{
+    padding:5px;
+}
+.questionActive{
+    width:100%;
+    padding:10px;
+    margin-bottom:5px;
+    color:var(--activeColor);
+    font-weight: 600;
+}
+.errorMsg{
+    color:var(--warningColor);
+    font-size: 14px;
+}
+.platform{
+    padding:30px;
+}
+.platformTxt{
+    padding:20px;
+}
+.android,.windows{
+    background:white;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding:10px;
+    text-indent: 10px;
+    border-radius: 5px;
+}.android:hover,.windows:hover{
+    background:var(--activeColor);
+    color:white;
+}
+.gdpr{
+    padding:20px;
+}
+.gdpr h1{
+    padding:10px;
+}
+.gdprDesc{
+    padding:10px;
+    letter-spacing: 1px;
+}
+.checkboxes{
+    padding:20px;
+}
+.checkbox{
+    padding:5px;
+}
+.checkbox input[type='checkbox']{
+    height:20px;
+    width:20px;
+    vertical-align: middle;
+
+}
+.checkbox label{
+    font-size: 1.2rem;
+}
+.desc{
+    padding:10px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    cursor: pointer;
+    padding:10px 20px;
+    background:white;
+    width:30%;
+    text-align: center;
+}
+.continue{
+    color:white;
+    background: var(--activeColor);
+}
+#form{
+    font-family: var(--font);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.reset button{
+    padding:10px 30px;
+    color:white;
+    background:dodgerblue;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+.themes{
+    display: flex;
+    padding:20px;
+    justify-content: space-around;
+}
+.customizer{
+    background:rgba(0, 128, 128,0.3);
+    padding:20px;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.themeColor{
+    height:40px;
+    width:50px;
+    background:#ff0094;
+    border:4px solid white;
+    cursor: pointer;
+}
+.t1,.t2,.t3{
+    display: flex;
+    font-size: 1.3rem;
+    margin:5px;
+    vertical-align: middle;
+    font-family: consolas;
+}
+.themeColor2,.themeColor3{
+    height:40px;
+    width:50px;
+    cursor: pointer;
+    border:4px solid white;
+}
+.themeColor2{
+    background:#123456;
+}
+.themeColor3{
+    background:#3fc1c9;
+}
+.themesHeading{
+    padding:20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.container{
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1280px){
+    .form{
+        width:100%;
+    }
+    .customizer{
+        width:100%;
+    }
+}
+.custom{
+    font-size:3rem;
+    color:white;
+    background:black;
+    text-align: center;
+    font-family: digital-7;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.fonts-secondary{
+    padding:10px;
+    background:#3fc1c9;
+    font-family: sans-serif;
+}
+.questionDesc,.gdprDesc,.desc{
+    font-family: var(--font-secondary);
+    color:var(--colorSecondary);
+}
+#chkbx1:checked,#chkbx2:checked,#chkbx3:checked{
+    -webkit-appearance: none;
+    background-color:var(--activeColor);
+    border-radius: 2px;
+    background-image: url(./checked.png);
+    background-position: fixed;
+    background-size: cover;
+}
+.backgroundColor{
+    padding:20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+#bgColorPicker{
+    height:50px;
+    width:40px;
+}
+.backgroundColor label{
+    font-size: 1.4rem;
+}
+.secondary-color{
+height:50px;
+width:40px;
+}
+.secondaryColor label{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+.android,.windows{
+    color:black;
+}
